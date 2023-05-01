@@ -1,3 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
 .explore-side {
   padding: 5% 10%;
   padding-bottom: 0;
@@ -57,7 +69,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.explore-side .explore-nft-cards .card .card-inf .price-nft p {
+.explore-side .explore-nft-cards .card .card-inf .price-nft .price-nft p {
   margin: 0;
   color: gray;
 }
@@ -101,17 +113,17 @@
 }
 .explore-side .mobile-link .dot {
   top: -15%;
-  left: -5%;
+  left: -7%;
   width: 200px;
 }
 .explore-side .mobile-link .iPhone-13 {
-  right: 20%;
+  right: 70px;
   bottom: 0;
   width: 30%;
   z-index: 998;
 }
 .explore-side .mobile-link .phone-content {
-  right: 22.5%;
+  right: 95px;
   bottom: 0;
   width: 26.5%;
   border-radius: 30% 70px 0px 0px;
@@ -183,11 +195,31 @@ footer .footer-uls ul li a:hover {
   text-decoration: underline;
 }
 footer .footer-uls ul li input {
-  width: 300px;
-  height: 70px;
+  width: 250px;
+  height: 50px;
+  outline: none;
+  border: none;
+}
+footer .footer-uls ul li div {
+  border: 1px solid #000000;
   border-radius: 70px;
-  border: 0.95px solid #000000;
-  padding: 10px 15px;
+  padding-left: 15px;
+}
+footer .footer-uls ul li div div {
+  background-color: #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 900;
+}
+footer .footer-uls ul li:last-child div:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 footer .footer-uls .logo-links {
   position: absolute;
@@ -201,4 +233,4 @@ footer .footer-uls .logo-links {
 footer .footer-uls .logo-links img {
   width: 35px;
   height: 35px;
-}/*# sourceMappingURL=LandingPage-2.css.map */
+}/*# sourceMappingURL=style.css.map */

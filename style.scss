@@ -2,4 +2,277 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.explore-side {
+    padding: 5% 10%;
+    padding-bottom: 0;
+
+    .explore-heading {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        button {
+            width: 190px;
+            height: 45px;
+            border: 1px solid black;
+            background-color: transparent;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: black;
+                border: none;
+                color: white;
+            }
+        }
+    }
+
+    .explore-nft-cards {
+        padding: 5% 0;
+
+        .card {
+            padding: 3%;
+            border: 0;
+            box-shadow: 0px 4.57051px 54.8461px rgba(197, 197, 197, 0.25);
+
+            .card-inf {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                .person-inf-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h6 {
+                        padding-top: 6%;
+                        padding-left: 6%;
+                        font-weight: 600;
+                    }
+                }
+
+                .price-nft {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .price-nft p {
+                        margin: 0;
+                        color: gray;
+                    }
+
+                    div {
+                        width: 60px;
+
+                        b {
+                            margin-left: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .discover {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            width: 190px;
+            height: 45px;
+            border: 1px solid black;
+            background-color: transparent;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: black;
+                border: none;
+                color: white;
+            }
+        }
+    }
+
+    .mobile-link {
+        width: 100%;
+        height: 500px;
+        background: #151515;
+        margin: 15% auto;
+        border-radius: 40px;
+        position: relative;
+
+        img {
+            position: absolute;
+            z-index: 999;
+        }
+
+        .dot {
+            top: -15%;
+            left: -7%;
+            width: 200px;
+        }
+
+        .iPhone-13 {
+            right: 70px;
+            bottom: 0;
+            width: 30%;
+            z-index: 998;
+        }
+
+        .phone-content {
+            right: 95px;
+            bottom: 0;
+            width: 26.5%;
+            border-radius: 30% 70px 0px 0px;
+        }
+
+        .link {
+            padding: 100px 120px;
+
+            h1 {
+                font-size: 80px;
+                color: white;
+            }
+
+            button {
+                width: 190px;
+                height: 45px;
+                border: 1px solid white;
+                background-color: transparent;
+                border-radius: 20px;
+                font-size: 15px;
+                font-weight: 600;
+                color: white;
+
+                span {
+                    font-weight: 900;
+                }
+
+                &:hover {
+                    color: black;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #fff;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+
+    .footer-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 300px;
+        padding: 0;
+        gap: 20px;
+
+        h1 {
+            font-weight: 500;
+            font-size: 50px;
+        }
+
+        p {
+            color: gray;
+            font-size: 15px;
+        }
+    }
+
+    .footer-uls {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        position: relative;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: gray;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                input {
+                    width: 250px;
+                    height: 50px;
+                    outline: none;
+                    border: none;
+                }
+
+                div {
+                    border: 1px solid #000000;
+                    border-radius: 70px;
+                    padding-left: 15px;
+
+                    div {
+                        background-color: #000;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        font-size: 25px;
+                        font-weight: 900;
+                    }
+                }
+            }
+
+            li:last-child {
+                div:first-child {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+        }
+
+        .logo-links {
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+            display: grid;
+            width: auto;
+            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
 }
