@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail NFT</title>
+</head>
+
+<body>
+    <div class="main-menu">
+        <div class="left">
+            <img src="../images/Polygon 4.png" alt="">
+            <img src="../images/Polygon 5.png" alt="">
+            <img src="../images/Polygon 6.png" alt="">
+        </div>
+        <input id="search" type="text" placeholder="🔍 Search">
+        <div class="right">
+            <a href="#explore"><b>Explore</b></a>
+            <a href="#trending">Trending🔥</a>
+            <a href="#HAQ">HAQ</a>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="left">
+            <img src="../images/Rectangle 275 (12).png" alt="" width="350px" height="375px">
+        </div>
+        <div class="right">
+            <h1>ExBoot #1</h1>
+            <p>Minted on Dec 31, 2022</p>
+            <div class="about">
+                <div class="first">
+                    <p>Collection</p>
+                    <p>Creator</p>
+                </div>
+
+                <div class="creators">
+                    <div class="first">
+                        <img src="../images/Ellipse 28 (3).png" alt="" width="25px" height="30px">
+                        <h4>Richard</h4>
+                    </div>
+                    <div class="second">
+                        <img src="../images/Ellipse 28 (2).png" alt="" width="25px" height="30px">
+                        <h4>Michael</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <p>Description</p>
+                <p>We would like to present you The ExBoot 3D - Watching you <br> a digital collectible that utilizes
+                    blockchain technology to prove <br> authenticity and scarcity. A must-have for any futuristic art
+                    enthusiast.</p>
+            </div>
+            <div class="current">
+                <div class="first">
+                    <p>Current Bid</p>
+                    <p>End in</p>
+                </div>
+                <div class="second">
+                    <h2><img src="../images/Vector.png" alt=""> 3421</h2>
+                    <h2>1h 12m 14s</h2>
+                </div>
+            </div>
+            <button><img src="../images/Vector (3).png" alt=""> Place Bid</button>
+        </div>
+    </div>
+
+    <footer class="LandingPage-footer">
+
+        <div class="footer-heading">
+            <div class="img-logo">
+                <img src="../images/Polygon 4.png" alt="">
+                <img src="../images/Polygon 5.png" alt="">
+                <img src="../images/Polygon 6.png" alt="">
+            </div>
+            <h1>NFT Distro</h1>
+            <p>Experience the Revolutionary World of Non-Fungible <br> Tokens on Our Exclusive NFT Marketplace</p>
+            <div class="togl">
+                <img src="../images/contrast.png" alt="">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <img src="../images/crescent-moon.png" alt="">
+            </div>
+            <p style="display: flex; align-items: center;"><span style="font-size: 30px; margin-right: 7px;">©</span>
+                Copyright NFT Distro 2023
+            </p>
+        </div>
+        <div class="footer-uls">
+            <ul>
+                <li><b>Company</b></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul>
+                <li><b>Cretor</b></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Become Artist</a></li>
+            </ul>
+            <ul>
+                <li><b>Join our community</b></li>
+                <li>
+                    <div class="input"><input type="email" placeholder="Enter your email address">
+                        <div class="submit">&rightarrow;</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="logo-links">
+                <a href="https://www.facebook.com"><img src="../images/Frame 30.png" alt=""></a>
+                <a href="https://www.google.com"><img src="../images/Frame 33.png" alt=""></a>
+                <a href="https://www.twitter.com"><img src="../images/Frame 34.png" alt=""></a>
+                <a href="https://www.apple.com"><img src="../images/Frame 35.png" alt=""></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s ease;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 25px;
+        color: lightgray;
+
+    }
+
+    .main-menu>.left {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 50px;
+        column-gap: 5px;
+        text-align: center;
+    }
+
+    #search {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: gainsboro;
+        color: white;
+        position: relative;
+        padding: 10px 18px;
+        left: -175px;
+    }
+
+    #search::placeholder {
+        color: white;
+        cursor: pointer;
+    }
+
+    .main-menu>.right>a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        margin-top: 5px;
+
+    }
+
+    .main-menu>.right {
+        margin-top: 4px;
+    }
+
+    .middle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 35px;
+        color: #888;
+    }
+
+    .middle>.right>.about {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        margin-left: -167px;
+    }
+
+
+
+    .middle>.right>.about>.creators {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .middle>.right>.about>.creators>.first {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4.57051px 54.8461px rgba(197, 197, 197, 0.25);
+        border-radius: 7px;
+        padding: 15px 24px;
+        gap: 5px;
+    }
+
+
+    .middle>.right>.about>.creators>.second {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4.57051px 54.8461px rgba(197, 197, 197, 0.25);
+        border-radius: 7px;
+        padding: 15px 24px;
+        gap: 15px;
+    }
+
+
+
+    .middle>.right>.about>.first {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin: 5px;
+    }
+
+    .middle>.right>.about>.first>p:nth-child(2) {
+        position: relative;
+        left: -29px;
+    }
+
+    .middle>.right>.about>.first>p:nth-child(1) {
+        position: relative;
+        left: -55px;
+    }
+
+    .middle>.right>h1 {
+        margin: 15px;
+        font-size: 400;
+        color: black;
+    }
+
+    .middle>.right {
+        margin-left: -190px;
+    }
+
+    .middle>.right>p {
+        margin: 15px;
+        font-size: 600;
+        color: #888;
+    }
+
+    .middle>.right>.about>.creators>.first>h4 {
+        color: black;
+    }
+
+    .middle>.right>.about>.creators>.second>h4 {
+        color: black;
+    }
+
+    .middle>.right>.description {
+        margin: 15px;
+    }
+
+    .middle>.right>.description>p {
+        margin: 5px;
+    }
+
+    .middle>.right>.description>p:nth-child(2) {
+        color: black;
+    }
+
+    .middle>.right>.current>.first {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .middle>.right>.current>.second {
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 25px;
+
+    }
+
+    .middle>.right>.current {
+        margin-left: -96px;
+
+
+    }
+
+    .middle>.right>button {
+        padding: 14px 20px;
+        width: 80%;
+        border: none;
+        background: linear-gradient(108.39deg, #FF56BB 6.99%, #FF8F77 119.86%);
+        color: #fff;
+        border-radius: 10px;
+        margin-top: 25px;
+        border: none;
+        margin-left: 17px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    footer {
+        background-color: #fff;
+        padding: 5% 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer .footer-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+
+    footer .footer-heading h1 {
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    footer .footer-heading p {
+        color: gray;
+        font-size: 15px;
+    }
+
+    footer .footer-heading .togl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+    }
+
+    footer .footer-heading .togl img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .footer-uls {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        width: 800px;
+    }
+
+    footer .footer-uls ul {
+        list-style: none;
+    }
+
+    footer .footer-uls ul li {
+        margin-bottom: 20px;
+    }
+
+    footer .footer-uls ul li a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    footer .footer-uls ul li a:hover {
+        text-decoration: underline;
+    }
+
+    footer .footer-uls ul li input {
+        width: 270px;
+        height: 50px;
+        outline: none;
+        border: none;
+        padding: 0 10px;
+        border-radius: 30px;
+        background: none;
+        color: #FF56BB;
+    }
+
+    footer .footer-uls ul li div {
+        border: 1px solid #000000;
+        border-radius: 70px;
+        padding-left: 15px;
+    }
+
+    footer .footer-uls ul li div .submit {
+        background-color: #000;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    footer .footer-uls ul li div .submit:hover {
+        opacity: 0.6;
+    }
+
+    footer .footer-uls ul li:last-child div:first-child {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .footer-uls .logo-links {
+        position: absolute;
+        bottom: 15%;
+        right: 8%;
+        display: grid;
+        width: auto;
+        gap: 25px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer .footer-uls .logo-links img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin: 10px;
+    }
+
+    .switch input {
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background: linear-gradient(108.39deg, #FF56BB 6.99%, #FF8F77 119.86%);
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked+.slider {
+        background-color: #fff;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(26px);
+    }
+
+    .slider:before {
+        display: block;
+    }
+
+    .slider:after {
+        display: none;
+    }
+
+    .light {
+        background-color: #fff;
+        box-shadow: 0px 4.57051px 54.8461px rgba(197, 197, 197, 0.25);
+        color: #000;
+    }
+
+    .dark {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .dark-theme {
+        background-color: #151515;
+        color: #fff;
+    }
+
+</style>
+
+</html>
