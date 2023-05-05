@@ -89,3 +89,32 @@ function switchTheme_(event) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme_);
+
+const openModal = document.querySelector('#open-modal');
+        const closeModalEls = document.querySelectorAll('.close');
+        const modal = document.querySelector('.modal');
+
+
+        openModal.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.style.opacity = 1;
+            }, 100);
+        });
+
+        closeModalEls.forEach(closeModalEl => {
+            closeModalEl.addEventListener('click', () => {
+                switchOffModal();
+            });
+        })
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                switchOffModal();
+            }
+        }
+        function switchOffModal() {
+            modal.style.opacity = 0;
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 1000);
+        }
